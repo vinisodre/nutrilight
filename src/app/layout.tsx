@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col min-h-screen items-center">
           <Navbar />
-          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full">
             <main className="flex-1">{children}</main>
           </div>
         </div>

@@ -16,9 +16,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const menuItems = [
-    { name: "Sobre", href: "/about" },
-    { name: "Serviços", href: "/services" },
-    { name: "Contato", href: "#contact" },
+    { name: "Quem Somos", href: "/quem-somos" },
+    { name: "Refeições", href: "/refeicoes" },
+    { name: "Eventos", href: "/eventos" },
+    { name: "Contato", href: "/#contact" },
   ];
 
   return (
@@ -66,7 +67,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-1 items-center justify-center md:justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold">Logo</span>
+            <span className="font-bold text-2xl">NutriLight</span>
           </Link>
         </div>
 
