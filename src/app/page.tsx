@@ -9,6 +9,7 @@ export default function LandingPage() {
     <>
       {/* Hero Section */}
       <Hero
+        backgroundImage="/images/hero2.png"
         title="A refeição perfeita para o seu negócio"
         description="Nós alimentamos a seus funcionários com carinho e sabor"
         showPrimaryButton={false}
@@ -17,14 +18,19 @@ export default function LandingPage() {
 
       {/* Content Section 1 */}
       <Section1
+        backgroundColor=""
         title="Nosso diferencial"
         description="Nós alimentamos a seus funcionários com carinho e sabor"
+        paragraph="Nosso grande diferencial é contar com uma nutricionista responsável pela elaboração dos cardápios e pelo acompanhamento da produção. Além disso, oferecemos treinamento para os funcionários e explicamos o manual de boas práticas, conforme a legislação vigente (RDC 216)."
         features={[
-          { icon: "/images/placeholder300.png", text: "Feature 1" },
-          { icon: "/images/placeholder300.png", text: "Feature 2" },
-          { icon: "/images/placeholder300.png", text: "Feature 3" },
+          { icon: "/images/placeholder300.png", text: "Marmitas Fit" },
+          { icon: "/images/placeholder300.png", text: "Refeições para obras" },
+          {
+            icon: "/images/placeholder300.png",
+            text: "Eventos e Coffee Breaks",
+          },
         ]}
-        mainImageSrc="/images/placeholder300.png"
+        mainImageSrc="/images/marmitas.jpg"
         mainImageAlt="Main Feature Illustration"
         showPrimaryButton={false}
         showSecondaryButton={false}
@@ -32,7 +38,7 @@ export default function LandingPage() {
 
       {/* Content Section 2 */}
       <Section2
-        imageSrc="/images/placeholder300.png"
+        imageSrc="/images/teste.jpg"
         title="Quem somos"
         description="O segredo do nosso sabor e qualidade estão nas mãos de quem faz a refeição.
         Há una nutricionista preparando cada refeição do seu negócio."
@@ -44,16 +50,14 @@ export default function LandingPage() {
       {/* Image Gallery */}
       <Galery
         title="Um pouco do nosso trabalho"
+        description="Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
         images={[
-          { src: "/images/placeholder300.png", alt: "Image 1" },
-          { src: "/images/placeholder300.png", alt: "Image 2" },
-          { src: "/images/placeholder300.png", alt: "Image 3" },
-          { src: "/images/placeholder300.png", alt: "Image 4" },
-          { src: "/images/placeholder300.png", alt: "Image 5" },
-          { src: "/images/placeholder300.png", alt: "Image 6" },
-          { src: "/images/placeholder300.png", alt: "Image 7" },
-          { src: "/images/placeholder300.png", alt: "Image 8" },
-          { src: "/images/placeholder300.png", alt: "Image 9" },
+          { src: "/images/marmita1.jpg", alt: "Image 1" },
+          { src: "/images/marmita2.jpg", alt: "Image 2" },
+          { src: "/images/marmita3.jpg", alt: "Image 3" },
+          { src: "/images/marmita4.jpg", alt: "Image 4" },
+          { src: "/images/marmita5.jpg", alt: "Image 5" },
+          { src: "/images/marmita6.jpg", alt: "Image 6" },
         ]}
       />
 

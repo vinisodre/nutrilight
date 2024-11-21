@@ -4,6 +4,7 @@ import React from "react";
 interface Section1Props {
   title: string;
   description: string;
+  paragraph?: string;
   features: { icon: string; text: string }[];
   mainImageSrc: string;
   mainImageAlt?: string;
@@ -11,11 +12,13 @@ interface Section1Props {
   showSecondaryButton?: boolean;
   primaryButtonText?: string;
   secondaryButtonText?: string;
+  backgroundColor?: string;
 }
 
 function Section1({
   title,
   description,
+  paragraph,
   features,
   mainImageSrc,
   mainImageAlt = "Main Feature Illustration",
@@ -23,18 +26,25 @@ function Section1({
   showSecondaryButton = false,
   primaryButtonText = "Get Started",
   secondaryButtonText = "Learn More",
+  backgroundColor = "transparent", // Padrão para o background
 }: Section1Props) {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section
+      className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800"
+      style={{ backgroundColor }}
+    >
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center space-y-4">
-            <div className="space-y-2">
+            <div className="w-full">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                 {title}
               </h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className=" text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 {description}
+              </p>
+              <p className=" text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 pt-8">
+                {paragraph}
               </p>
             </div>
             <ul className="grid gap-2 py-4">
@@ -63,7 +73,7 @@ function Section1({
               </div>
             )}
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <Image
               src={mainImageSrc}
               width={400}

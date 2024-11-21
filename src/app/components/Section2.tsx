@@ -29,7 +29,7 @@ function Section2({
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <Image
             src={imageSrc}
-            width={600}
+            width={400}
             height={400}
             alt={imageAlt}
             className="mx-auto"
