@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-interface HeroProps {
+interface BannerProps {
   title: string;
   description: string;
   backgroundImage?: string; // Nova propriedade opcional
@@ -11,7 +11,7 @@ interface HeroProps {
   secondaryButtonText?: string;
 }
 
-function Hero({
+function Banner({
   title,
   description,
   backgroundImage,
@@ -19,7 +19,7 @@ function Hero({
   showSecondaryButton = true,
   primaryButtonText = "Get Started",
   secondaryButtonText = "Learn More",
-}: HeroProps) {
+}: BannerProps) {
   const styles = {
     backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
     backgroundSize: "cover",
@@ -27,17 +27,14 @@ function Hero({
   };
 
   return (
-    <section
-      className="w-full min-h-96 py-12 md:py-24 lg:py-32 xl:py-48"
-      style={styles}
-    >
+    <section className="w-full py-12 md:py-6 lg:py-12 xl:py-12" style={styles}>
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
-        <div className="flex flex-col justify-center items-center text-center">
+        <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl/none">
               {title}
             </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            <p className="mx-auto max-w-[700px] text-gray-800 md:text-xl dark:text-gray-400">
               {description}
             </p>
           </div>
@@ -57,4 +54,4 @@ function Hero({
   );
 }
 
-export default Hero;
+export default Banner;

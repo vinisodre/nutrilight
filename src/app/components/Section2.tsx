@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Section2Props {
@@ -10,6 +11,8 @@ interface Section2Props {
   showPrimaryButton?: boolean;
   showSecondaryButton?: boolean;
   primaryButtonText?: string;
+  linkPrimaryButton?: string;
+  linkSecondaryButton?: string;
   secondaryButtonText?: string;
 }
 
@@ -21,7 +24,9 @@ function Section2({
   showPrimaryButton = true,
   showSecondaryButton = true,
   primaryButtonText = "Get Started",
+  linkPrimaryButton,
   secondaryButtonText = "Learn More",
+  linkSecondaryButton,
 }: Section2Props) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
@@ -45,12 +50,16 @@ function Section2({
             </div>
             <div className="flex gap-4 w-full justify-center md:space-x-4 items-center my-8">
               {showPrimaryButton && (
-                <Button size="lg">{primaryButtonText}</Button>
+                <Link href={linkPrimaryButton || "/"}>
+                  <Button size="lg">{primaryButtonText}</Button>
+                </Link>
               )}
               {showSecondaryButton && (
-                <Button variant="outline" size="lg" className="md:mt-0">
-                  {secondaryButtonText}
-                </Button>
+                <Link href={linkSecondaryButton || "/"}>
+                  <Button variant="outline" size="lg" className="md:mt-0">
+                    {secondaryButtonText}
+                  </Button>
+                </Link>
               )}
             </div>
           </div>

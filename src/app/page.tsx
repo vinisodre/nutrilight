@@ -45,6 +45,7 @@ export default function LandingPage() {
         showPrimaryButton={false}
         showSecondaryButton={true}
         secondaryButtonText="Conheça quem somos"
+        linkSecondaryButton="/quem-somos"
       />
 
       {/* Image Gallery */}
