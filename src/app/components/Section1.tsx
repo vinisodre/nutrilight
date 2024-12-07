@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Title from "@/components/ui/title";
+import { Check } from "lucide-react";
 
 interface Section1Props {
   title: string;
@@ -37,26 +39,18 @@ function Section1({
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center mx-0">
             <div className="mx-10">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                {title}
-              </h2>
+              <Title title={title} description={description} />
               <p className=" text-gray-500 md:text-md dark:text-gray-400">
-                {description}
-              </p>
-              <p className=" text-gray-500 md:text-md dark:text-gray-400 pt-8">
                 {paragraph}
               </p>
             </div>
             <ul className="grid gap-2 py-4 mx-10 mt-10">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center">
-                  <Image
-                    src={feature.icon}
-                    width={50}
-                    height={50}
-                    alt={`Feature ${index + 1}`}
-                  />
-                  <span className="ml-4 md:text-2xl">{feature.text}</span>
+                  <div className="flex-shrink-0">
+                    <Check className="h-6 w-6 text-green-500" />
+                  </div>
+                  <span className="ml-4 md:text-xl">{feature.text}</span>
                 </li>
               ))}
             </ul>

@@ -18,6 +18,7 @@ export default function Navbar() {
   const menuItems = [
     { name: "Quem Somos", href: "/quem-somos" },
     { name: "Refeições", href: "/refeicoes" },
+    { name: "Marmitas", href: "/marmitas" },
     { name: "Eventos", href: "/eventos" },
     { name: "Contato", href: "/#contact" },
   ];
@@ -29,7 +30,7 @@ export default function Navbar() {
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
-              variant="ghost"
+              variant="link"
               className="mr-2 px-0 text-base hover:bg-transparent focus:ring-0 md:hidden"
             >
               <Menu className="h-6 w-6" />
@@ -77,7 +78,7 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.name}>
                 <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                  <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-md font-bold transition-colors hover:underline">
                     {item.name}
                   </NavigationMenuLink>
                 </Link>

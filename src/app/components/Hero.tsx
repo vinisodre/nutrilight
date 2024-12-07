@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Title from "@/components/ui/title";
 import React from "react";
 
 interface HeroProps {
@@ -34,12 +35,7 @@ function Hero({
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="flex flex-col justify-center items-center text-center">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl/none">
-              {title}
-            </h1>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              {description}
-            </p>
+            <Title title={title} description={description} />
           </div>
           <div className="flex gap-4 w-full justify-center md:space-x-4 items-center">
             {showPrimaryButton && (

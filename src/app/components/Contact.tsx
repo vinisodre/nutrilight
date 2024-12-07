@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Title from "@/components/ui/title";
 import { Instagram, Mail } from "lucide-react";
 
 interface ContactProps {
@@ -17,12 +18,7 @@ function Contact({ title, description, links }: ContactProps) {
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              {title}
-            </h2>
-            <p className="mx-auto max-w-[800px] text-gray-500 md:text-xl dark:text-gray-400">
-              {description}
-            </p>
+            <Title title={title} description={description} />
           </div>
           <div className="w-full max-w-sm space-y-2">
             <div className="flex gap-4 w-full justify-center md:space-x-4 items-center">

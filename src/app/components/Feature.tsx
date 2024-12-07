@@ -1,3 +1,4 @@
+import Title from "@/components/ui/title";
 import { Check } from "lucide-react";
 import Image from "next/image";
 
@@ -22,12 +23,7 @@ export default function Feature({
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center mx-0">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                {title}
-              </h2>
-              <p className="text-gray-500 md:text-md dark:text-gray-400">
-                {description}
-              </p>
+              <Title title={title} description={description} />
             </div>
             <div className="mt-10">
               <div className="">
