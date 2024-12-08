@@ -21,7 +21,7 @@ function ImageText({
       className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800"
       style={{ backgroundColor }}
     >
-      <div className="container px-4 md:px-6 mx-auto max-w-7xl">
+      <div className="container px-4 md:px-6 mx-auto max-w-7xl flex">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           {/* Texto */}
           <div className="flex flex-col justify-center mx-0">
@@ -44,25 +44,27 @@ function ImageText({
           </div>
 
           {/* Galeria de Imagens */}
-          <div className="grid sm:grid-cols-2 gap-4">
-            {images && images.length > 0 ? (
-              images.map((image, index) => (
-                <div
-                  key={index}
-                  className="w-[300px] h-[300px] overflow-hidden relative rounded-lg"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={300}
-                    height={300}
-                    className="object-cover"
-                  />
-                </div>
-              ))
-            ) : (
-              <p className="col-span-full text-center">No images available</p>
-            )}
+          <div className="flex flex-colh-full justify-center">
+            <div className="grid sm:grid-cols-2 gap-4 items-center justify-center">
+              {images && images.length > 0 ? (
+                images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="w-[300px] h-[300px] overflow-hidden relative rounded"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={350}
+                      height={350}
+                      className="object-cover"
+                    />
+                  </div>
+                ))
+              ) : (
+                <p className="col-span-full text-center">No images available</p>
+              )}
+            </div>
           </div>
         </div>
       </div>

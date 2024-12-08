@@ -28,7 +28,7 @@ function Section1({
   showSecondaryButton = false,
   primaryButtonText = "Get Started",
   secondaryButtonText = "Learn More",
-  backgroundColor = "transparent", // Padrão para o background
+  backgroundColor = "transparent",
 }: Section1Props) {
   return (
     <section
@@ -38,19 +38,19 @@ function Section1({
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center mx-0">
-            <div className="mx-10">
+            <div className="">
               <Title title={title} description={description} />
-              <p className=" text-gray-500 md:text-md dark:text-gray-400">
+              <p className=" text-gray-500 md:text-md dark:text-gray-400 mt-8">
                 {paragraph}
               </p>
             </div>
-            <ul className="grid gap-2 py-4 mx-10 mt-10">
+            <ul className="grid gap-2 py-4 mt-4">
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <div className="flex-shrink-0">
                     <Check className="h-6 w-6 text-green-500" />
                   </div>
-                  <span className="ml-4 md:text-xl">{feature.text}</span>
+                  <span className="ml-4 md:text-md">{feature.text}</span>
                 </li>
               ))}
             </ul>

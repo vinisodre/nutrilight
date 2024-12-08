@@ -18,7 +18,7 @@ export default function Feature({
   imageAlt,
 }: BusinessFeaturesProps) {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
+    <section className="w-full py-12 md:pb-24 lg:pb-32 dark:bg-gray-800">
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center mx-0">
