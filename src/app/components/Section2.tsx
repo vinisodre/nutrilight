@@ -30,7 +30,7 @@ function Section2({
   linkSecondaryButton,
 }: Section2Props) {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24">
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <Image
@@ -44,7 +44,7 @@ function Section2({
             <div className="space-y-2">
               <Title title={title} description={description} />
             </div>
-            <div className="flex gap-4 w-full justify-center md:space-x-4 items-center my-8">
+            <div className="flex gap-4 w-full md:space-x-4 justify-center md:justify-start items-center md:items-start my-8">
               {showPrimaryButton && (
                 <Link href={linkPrimaryButton || "/"}>
                   <Button size="lg">{primaryButtonText}</Button>
@@ -52,7 +52,12 @@ function Section2({
               )}
               {showSecondaryButton && (
                 <Link href={linkSecondaryButton || "/"}>
-                  <Button variant="outline" size="lg" className="md:mt-0">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="md:mt-0 hover:bg-yellow-100"
+                    style={{ background: "rgba(255, 252, 240, 1)" }}
+                  >
                     {secondaryButtonText}
                   </Button>
                 </Link>

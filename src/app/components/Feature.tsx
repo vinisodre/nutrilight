@@ -19,7 +19,7 @@ export default function Feature({
 }: BusinessFeaturesProps) {
   return (
     <section className="w-full py-12 md:pb-24 lg:pb-32 dark:bg-gray-800">
-      <div className="container px-4 md:px-6 mx-auto max-w-7xl">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center mx-0">
             <div>
@@ -46,8 +46,8 @@ export default function Feature({
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 className="object-cover"
               />
             </div>

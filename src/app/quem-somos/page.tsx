@@ -2,10 +2,12 @@ import React from "react";
 import Banner from "../components/Banner";
 import ImageText from "../components/ImageText";
 import Gallery2 from "../components/Galery2";
+import DotPattern from "@/components/ui/dot-pattern";
 
 function page() {
   return (
-    <>
+    <div className="relative">
+      <DotPattern className="absolute inset-0 -z-10" />
       <Banner
         title="Quem Somos"
         description="A refeição perfeita para o seu negócio"
@@ -34,7 +36,7 @@ function page() {
           { src: "/images/marmita3.jpg", alt: "Image 3" },
         ]}
       />
-    </>
+    </div>
   );
 }
 

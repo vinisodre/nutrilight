@@ -15,7 +15,7 @@ function page() {
         backgroundImage="/images/hero2.png"
       />
       <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
-        <div className="container px-4 md:px-6 mx-auto max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
             {/* Texto */}
             <div className="flex flex-col justify-center mx-0 order-2 lg:order-1">
@@ -86,13 +86,13 @@ function page() {
           "Atendimento profissional e flexível às suas necessidades",
           "Comida saborosa que encanta seus convidados",
         ]}
-        imageSrc="/images/placeholder300.png"
+        imageSrc="/images/nutrilightceia .png"
         imageAlt="Marmitas fit e saudáveis organizadas em uma mesa."
       />
       <CTABanner
         title="Vamos planejar o cardápio do seu evento?"
-        description="Deixe suas comemorações ainda mais marcantes com nossos serviços de alimentação para eventos. Clique no botão abaixo e fale conosco no WhatsApp para criar o cardápio perfeito!"
-        buttonLink="https://wa.me/5551999999999"
+        description="Deixe suas comemorações ainda mais marcantes com nossos serviços de alimentação para eventos."
+        buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
         buttonLabel="Fale no Whatsapp"
       />
     </>
