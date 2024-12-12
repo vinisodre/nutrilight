@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
 import Title from "@/components/ui/title";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface Section2Props {

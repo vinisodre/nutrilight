@@ -3,16 +3,17 @@ import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 interface DotPatternProps {
-  width?: any;
-  height?: any;
-  x?: any;
-  y?: any;
-  cx?: any;
-  cy?: any;
-  cr?: any;
-  className?: string;
-  [key: string]: any;
+  width?: number; // SVG width
+  height?: number; // SVG height
+  x?: number; // x-coordinate offset
+  y?: number; // y-coordinate offset
+  cx?: number; // circle center x-coordinate
+  cy?: number; // circle center y-coordinate
+  cr?: number; // circle radius
+  className?: string; // optional CSS classes
+  [key: string]: unknown; // allow additional properties
 }
+
 export function DotPattern({
   width = 16,
   height = 16,
@@ -31,7 +32,7 @@ export function DotPattern({
       aria-hidden="true"
       className={cn(
         "pointer-events-none absolute inset-0 h-full w-full fill-neutral-400/80",
-        className,
+        className
       )}
       {...props}
     >
