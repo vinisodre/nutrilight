@@ -12,9 +12,7 @@ function Title({ title, description }: mainTitleProps) {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
           {title}
         </h2>
-        <p className=" text-gray-500 md:text-md dark:text-gray-400 mt-2">
-          {description}
-        </p>
+        <p className=" text-gray-500 md:text-md mt-2">{description}</p>
       </div>
     </>
   );

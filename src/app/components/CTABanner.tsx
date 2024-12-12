@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import Title from "@/components/ui/title";
 
 interface CTABannerProps {
   title?: string;
@@ -20,10 +19,15 @@ export default function CTABanner({
 }: CTABannerProps) {
   return (
     <section className="w-full py-12 md:py-24 bg-primary text-primary-foreground">
-      <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-6">
           <div className="space-y-2 text-center md:text-left">
-            <Title title={title} description={description} />
+            <div className="">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                {title}
+              </h2>
+              <p className=" text-gray-200 md:text-md mt-2">{description}</p>
+            </div>
           </div>
           <div className="flex flex-col items-center md:items-start space-y-2">
             <Button

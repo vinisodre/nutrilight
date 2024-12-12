@@ -11,6 +11,7 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -68,7 +69,12 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex flex-1 items-center justify-center md:justify-start">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-bold text-2xl">NutriLight</span>
+            <Image
+              src="/images/nutrilightlogo3.png"
+              alt="Logo"
+              width={220}
+              height={50}
+            />
           </Link>
         </div>
 
@@ -90,7 +96,7 @@ export default function Navbar() {
         {/* Call to Action Button (Desktop) */}
         <div className="hidden flex-1 items-center justify-end md:flex">
           <a
-            href="https://www.google.com"
+            href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
             target="_blank"
             rel="noopener noreferrer"
           >

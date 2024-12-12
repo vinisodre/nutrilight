@@ -48,14 +48,14 @@ function page() {
           "Entregas rápidas e embalagens práticas",
           "Ideal para quem busca saúde, sabor e praticidade",
         ]}
-        imageSrc="/images/placeholder300.png"
+        imageSrc="/images/nutrilightmarmitas.png"
         imageAlt="Marmitas fit e saudáveis organizadas em uma mesa."
       />
       <CTABanner
         title="Pronto para transformar sua alimentação?"
-        description="Escolha saúde e praticidade no seu dia a dia. Clique no botão abaixo e fale direto conosco no WhatsApp para conhecer nossas opções de marmitas e fazer seu pedido!"
+        description="Escolha saúde e praticidade no seu dia a dia. Clique no botão e fale diretamente com a nossa nutricionista para conhecer nossas opções de marmitas fit."
         buttonLabel="Fale no WhatsApp"
-        buttonLink="https://wa.me/5551999999999"
+        buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
       />
     </>
   );

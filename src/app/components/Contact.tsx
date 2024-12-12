@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+
 import Title from "@/components/ui/title";
+
 import { Instagram, Mail } from "lucide-react";
 
 interface ContactProps {
