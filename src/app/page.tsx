@@ -1,5 +1,4 @@
 import Contact from "./components/Contact";
-
 import Section2 from "./components/Section2";
 import Section1 from "./components/Section1";
 import HeroImage from "./components/HeroImage";
@@ -79,7 +78,7 @@ export default function LandingPage() {
             text: "Eventos e Coffee Breaks",
           },
         ]}
-        mainImageSrc="/images/marmitas.jpg"
+        mainImageSrc="/images/nutrilightmarmitas.png"
         mainImageAlt="Main Feature Illustration"
         showPrimaryButton={false}
         showSecondaryButton={false}
@@ -91,7 +90,10 @@ export default function LandingPage() {
         description="Tire suas dúvidas ou solicite um orçamento hoje mesmo através do Whatsapp. Estamos prontos para ajudar! Siga a gente também nas redes sociais."
         links={[
           { type: "instagram", url: "https://instagram.com/nutri_light0406" },
-          { type: "email", url: "mailto:contato@exemplo.com" },
+          {
+            type: "email",
+            url: "mailto:nutrilight.alimentossaudáveis@gmail.com",
+          },
           {
             type: "whatsapp",
             url: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z",

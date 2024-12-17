@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 
-import Title from "@/components/ui/title";
-
 import { Instagram, Mail } from "lucide-react";
+import { playfair } from "@/app/layout";
 
 interface ContactProps {
   title: string;
-  description: string;
+  description?: string;
   links: {
     type: "instagram" | "email" | "whatsapp";
     url: string;
@@ -14,16 +13,32 @@ interface ContactProps {
   }[];
 }
 
-function Contact({ title, description, links }: ContactProps) {
+function Contact({ title, links }: ContactProps) {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32" id="contact">
+    <section className="w-full py-12 md:py-24 lg:py-32 border-t" id="contact">
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <Title title={title} description={description} />
+            <div className="">
+              <h2
+                className={`${playfair.className} text-5xl font-bold tracking-tighter sm:text-5xl my-8`}
+              >
+                {title}
+              </h2>
+              <div className="text-center">
+                <p className=" text-gray-500 md:text-md mt-2">
+                  Tire suas dúvidas ou solicite um orçamento hoje mesmo através
+                  do Whatsapp.
+                </p>
+                <p className=" text-gray-500 md:text-md mt-2">
+                  Estamos prontos para ajudar! Siga a gente também nas redes
+                  sociais.
+                </p>
+              </div>
+            </div>
           </div>
           <div className="w-full max-w-sm space-y-2">
-            <div className="flex gap-4 w-full justify-center md:space-x-4 items-center">
+            <div className="flex gap-4 w-full justify-center md:space-x-4 items-center my-8">
               {links.map((link, index) => {
                 if (link.type === "instagram") {
                   return (

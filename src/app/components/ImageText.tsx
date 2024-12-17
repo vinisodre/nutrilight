@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { playfair } from "../layout";
 
 interface ImageTextProps {
   title: string;
@@ -19,16 +20,15 @@ function ImageText({
   backgroundColor = "transparent", // Padrão para o background
 }: ImageTextProps) {
   return (
-    <section
-      className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800"
-      style={{ backgroundColor }}
-    >
-      <div className="container px-4 md:px-6 mx-auto max-w-7xl">
+    <section className="w-full py-12 md:py-24" style={{ backgroundColor }}>
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           {/* Texto */}
           <div className="flex flex-col justify-center mx-0 order-2 lg:order-1">
             <div className="">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2
+                className={`${playfair.className} text-3xl font-bold tracking-tighter sm:text-5xl`}
+              >
                 {title}
               </h2>
               <p className="text-gray-500 md:text-md dark:text-gray-400">

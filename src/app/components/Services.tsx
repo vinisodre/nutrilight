@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Title from "@/components/ui/title";
+import { playfair } from "@/app/layout";
 
 interface ServiceProps {
   title: string;
@@ -34,8 +35,8 @@ function Services({
 }: ServicesSectionProps) {
   return (
     <section
-      className="w-full py-12 md:pb-24 md:pt-0 "
-      style={{ background: "rgba(255, 252, 240, 1)" }}
+      className="w-full py-12 md:py:-24 bg-transparent"
+      // style={{ background: "rgba(255, 252, 240, 1)" }}
     >
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <Title title={sectionTitle} description={sectionDescription} />
@@ -54,7 +55,11 @@ function Services({
                 </div>
               )}
               <CardHeader>
-                <CardTitle>{service.title}</CardTitle>
+                <CardTitle
+                  className={`${playfair.className} font-semibold text-xl`}
+                >
+                  {service.title}
+                </CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-gray-600 dark:text-gray-300">
@@ -62,7 +67,7 @@ function Services({
                 </p>
               </CardContent>
               {service.buttonText && service.buttonLink && (
-                <CardFooter>
+                <CardFooter className="flex justify-end">
                   <Button asChild>
                     <a href={service.buttonLink}>{service.buttonText}</a>
                   </Button>

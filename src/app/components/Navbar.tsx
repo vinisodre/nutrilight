@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
+import { playfair } from "@/app/layout";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky w-full top-0 z-50  border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container max-w-7xl px-8 md:px-6 flex h-14 items-center mx-auto">
+      <div className="container max-w-7xl px-8 md:px-6 flex h-16 items-center mx-auto">
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
@@ -44,7 +45,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-lg font-medium transition-colors hover:text-primary"
+                  className={`${playfair.className} text-xl font-medium transition-colors hover:text-primary`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
@@ -84,7 +85,9 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <NavigationMenuItem key={item.name}>
                 <Link href={item.href} legacyBehavior passHref>
-                  <NavigationMenuLink className="group inline-flex h-9 w-max items-center justify-center px-4 py-2 text-md font-bold transition-colors hover:underline">
+                  <NavigationMenuLink
+                    className={` ${playfair.className}  group inline-flex h-10 w-max items-center justify-center px-4 py-2 text-xl font-medium transition-colors hover:underline`}
+                  >
                     {item.name}
                   </NavigationMenuLink>
                 </Link>

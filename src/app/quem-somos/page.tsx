@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import ImageText from "../components/ImageText";
 import Gallery2 from "../components/Galery2";
 import DotPattern from "@/components/ui/dot-pattern";
+import Services from "../components/Services";
+import CTABanner from "../components/CTABanner";
 
 function page() {
   return (
@@ -25,16 +27,40 @@ function page() {
         ]}
       />
 
-      <Gallery2
-        title="Nosso trabalho"
-        images={[
-          { src: "/images/marmita1.jpg", alt: "Image 1" },
-          { src: "/images/marmita2.jpg", alt: "Image 2" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
-          { src: "/images/marmita1.jpg", alt: "Image 1" },
-          { src: "/images/marmita2.jpg", alt: "Image 2" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
+      <Services
+        sectionTitle="Nosso trabalho"
+        services={[
+          {
+            title: "Marmitas Fit",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Refeições Coletivas",
+            description:
+              "Nossas refeições coletivas oferecem cardápios balanceados e variados, tanto para clientes individuais quanto para refeições coletivas",
+            image: {
+              src: "/images/nutrilightrefeicoescoletivas.png",
+              alt: "Image 2",
+            },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Marmitas",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+            buttonText: "Saiba mais",
+          },
         ]}
+      />
+      <CTABanner
+        title="Dúvidas? Fale conosco!"
+        description="Nossa equipe está pronta para ajudar!"
+        buttonLabel="Fale no WhatsApp"
+        buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
       />
     </div>
   );

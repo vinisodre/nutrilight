@@ -33,7 +33,7 @@ export default function Feature({
                       <div className="flex-shrink-0">
                         <Check className="h-6 w-6 text-green-500" />
                       </div>
-                      <p className="ml-3 text-lg text-gray-700">{feature}</p>
+                      <p className="ml-3  text-gray-700">{feature}</p>
                     </li>
                   ))}
                 </ul>
