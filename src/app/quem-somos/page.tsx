@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
 import ImageText from "../components/ImageText";
-import Gallery2 from "../components/Galery2";
 import DotPattern from "@/components/ui/dot-pattern";
 import Services from "../components/Services";
 import CTABanner from "../components/CTABanner";

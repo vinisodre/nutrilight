@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
 import TextGalery from "../components/TextGalery";
-import Gallery3 from "../components/Galery3";
 import CTABanner from "../components/CTABanner";
 import Feature from "../components/Feature";
 import Services from "../components/Services";
