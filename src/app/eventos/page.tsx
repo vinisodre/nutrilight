@@ -3,6 +3,8 @@ import Banner from "../components/Banner";
 import Feature from "../components/Feature";
 import CTABanner from "../components/CTABanner";
 import Image from "next/image";
+import Services from "../components/Services";
+import { playfair } from "../layout";
 
 function page() {
   return (
@@ -12,7 +14,7 @@ function page() {
         description="Cardápios personalizados para festas e eventos corporativos, tornando cada ocasião ainda mais especial."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        backgroundImage="/images/hero2.png"
+        // backgroundImage="/images/nutrilightcasamento.png"
       />
       <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
@@ -20,7 +22,9 @@ function page() {
             {/* Texto */}
             <div className="flex flex-col justify-center mx-0 order-2 lg:order-1">
               <div className="">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h2
+                  className={`${playfair.className} text-3xl font-bold tracking-tighter sm:text-5xl`}
+                >
                   Praticidade para você
                 </h2>
                 <p className="text-gray-500 md:text-md dark:text-gray-400">
@@ -43,10 +47,9 @@ function page() {
                   com excelência.
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Servimos eventos em datas comemorativas e momentos especiais
-                  como:
+                  Servimos eventos em datas comemorativas e momentos especiais.
                 </p>
-                <ul className="text-gray-500 md:text-md dark:text-gray-400 pt-4 ml-2">
+                {/* <ul className="text-gray-500 md:text-md dark:text-gray-400 pt-4 ml-2">
                   <li className="mb-2 font-semibold">Festas de fim de ano</li>
                   <li className="mb-2 font-semibold">Natal e Ano Novo</li>
                   <li className="mb-2 font-semibold">Páscoa</li>
@@ -56,7 +59,7 @@ function page() {
                   <li className="mb-2 font-semibold">Reunioes de negócios</li>
                   <li className="mb-2 font-semibold">Aniversários</li>
                   <li className="mb-2 font-semibold">Casamentos</li>
-                </ul>
+                </ul> */}
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
                   Com nossa experiência, seu evento será um sucesso e vocé
                   poderá aproveitar o momento sem preocupações!
@@ -76,6 +79,63 @@ function page() {
           </div>
         </div>
       </section>
+
+      <Services
+        sectionTitle="Nossos Serviços"
+        sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
+        services={[
+          {
+            title: "Confraternizaçõe de empresas",
+            description: "confraternizações de fim de ano de empresas",
+            image: {
+              src: "/images/nutrilightconfraternizacao.png",
+              alt: "Image 1",
+            },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+          {
+            title: "Natal e Ano Novo",
+            description:
+              "Cardápio personalizado para celebrar o Natal e o Ano Novo",
+            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+          {
+            title: "Eventos corporativos",
+            description:
+              "Eventos corparativos e empresariais focados na satisfação do cliente",
+            image: { src: "/images/nutrilightcorp.png", alt: "Image 3" },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+          {
+            title: "Coffee Breaks",
+            description:
+              "Mesas de café para recepcionar e divertir os convidados do seu evento",
+            image: { src: "/images/nutrilightcoffee.png", alt: "Image 1" },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+          {
+            title: "Aniversários",
+            description:
+              "Cardápio variado e personalizado para celebrar aniversários",
+            image: { src: "/images/nutrilightniver.png", alt: "Image 2" },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+          {
+            title: "Casamentos",
+            description: "Eternize o momento com um cardápio super especial",
+            image: { src: "/images/nutrilightcasamento.png", alt: "Image 3" },
+            buttonText: "Saiba mais",
+            buttonLink: "/#",
+          },
+        ]}
+      />
+
       <Feature
         title="Por que escolher nossos serviços para eventos?"
         description="Garantimos uma experiência completa, com alimentos de qualidade e uma apresentação impecável para marcar suas celebrações."

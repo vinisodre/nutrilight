@@ -1,3 +1,6 @@
+import { playfair } from "../layout";
+
+import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
 
@@ -6,7 +9,7 @@ interface ImageTextProps {
   description?: string;
   paragraphs?: string[];
   backgroundColor?: string;
-  images: { src: string; alt: string }[];
+  services: { src: string; alt: string }[];
 }
 
 function ImageText({
@@ -14,19 +17,18 @@ function ImageText({
   description,
   paragraphs = [],
   backgroundColor = "transparent",
-  images,
+  services,
 }: ImageTextProps) {
   return (
-    <section
-      className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800"
-      style={{ backgroundColor }}
-    >
-      <div className="container px-4 md:px-6 mx-auto max-w-7xl flex">
+    <section className="w-full py-12 md:py-24" style={{ backgroundColor }}>
+      <div className="container mx-auto px-4 md:px-6 max-w-6xl">
         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           {/* Texto */}
           <div className="flex flex-col justify-center mx-0">
             <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2
+                className={`${playfair.className} text-3xl font-bold tracking-tighter sm:text-5xl`}
+              >
                 {title}
               </h2>
               <p className="text-gray-500 md:text-md dark:text-gray-400">
@@ -44,26 +46,20 @@ function ImageText({
           </div>
 
           {/* Galeria de Imagens */}
-          <div className="flex flex-colh-full justify-center">
-            <div className="grid sm:grid-cols-2 gap-4 items-center justify-center">
-              {images && images.length > 0 ? (
-                images.map((image, index) => (
-                  <div
-                    key={index}
-                    className="w-[300px] h-[300px] overflow-hidden relative rounded"
-                  >
+          <div className="flex flex-col h-full justify-center">
+            <div className="grid sm:grid-cols-2 sm:gap-1">
+              {services.map((service, index) => (
+                <Card key={index} className="flex flex-col mt-3 sm:mt-0">
+                  <div className="relative w-full pt-[70%]">
                     <Image
-                      src={image.src}
-                      alt={image.alt}
-                      width={350}
-                      height={350}
-                      className="object-cover"
+                      src={service.src}
+                      alt={service.alt}
+                      fill
+                      className="rounded-t-lg object-cover"
                     />
                   </div>
-                ))
-              ) : (
-                <p className="col-span-full text-center">No images available</p>
-              )}
+                </Card>
+              ))}
             </div>
           </div>
         </div>

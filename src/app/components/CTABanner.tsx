@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { playfair } from "@/app/layout";
 
 interface CTABannerProps {
   title?: string;
@@ -23,7 +24,9 @@ export default function CTABanner({
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-6">
           <div className="space-y-2 text-center md:text-left">
             <div className="">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2
+                className={`${playfair.className} text-3xl font-bold tracking-tighter sm:text-5xl`}
+              >
                 {title}
               </h2>
               <p className=" text-gray-200 md:text-md mt-2">{description}</p>

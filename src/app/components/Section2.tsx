@@ -55,8 +55,8 @@ function Section2({
                   <Button
                     variant="outline"
                     size="lg"
-                    className="md:mt-0 hover:bg-yellow-100"
-                    style={{ background: "rgba(255, 252, 240, 1)" }}
+                    className="md:mt-0 bg-green-600 text-white hover:bg-black hover:text-white"
+                    // style={{ background: "rgba(255, 252, 240, 1)" }}
                   >
                     {secondaryButtonText}
                   </Button>

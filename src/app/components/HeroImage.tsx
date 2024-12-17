@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import DotPattern from "@/components/ui/dot-pattern";
 import Image from "next/image";
 import React from "react";
+import { playfair } from "@/app/layout";
 
 interface HeroProps {
   title: string;
@@ -39,7 +40,9 @@ function HeroImage({
           {/* Texto e botões */}
           <div className="md:basis-3/5 z-10 order-1">
             <div className="">
-              <h2 className="text-5xl md:text-8xl font-bold tracking-tighter">
+              <h2
+                className={`${playfair.className} text-6xl sm:text-5xl md:text-8xl font-bold tracking-tighter`}
+              >
                 {title}
               </h2>
               <p className="text-gray-500 md:text-md dark:text-gray-400 mt-2">

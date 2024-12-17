@@ -9,18 +9,18 @@ interface Section2Props {
 function TwoColumnsText({ title, description }: Section2Props) {
   return (
     <section
-      className="w-full py-12 md:py-24 lg:py-32 bg-center bg-cover"
+      className="w-full py-24 bg-center bg-cover"
       style={{
         backgroundImage:
           "linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 252, 240, 1)), url('/images/refeitorio.png')",
       }}
     >
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="w-3/4">
+        <div className="w-full mb-10 md:mb-0">
           <Title title={title} description={description} />
         </div>
         <div className="flex flex-wrap justify-center mx-auto">
-          <div className="w-full md:w-1/2 my-8 order-1 md:pr-4">
+          <div className="w-full md:w-1/2 md:my-8 order-1 md:pr-4">
             <div className="space-y-8 mt-4">
               {[
                 {
@@ -51,7 +51,7 @@ function TwoColumnsText({ title, description }: Section2Props) {
               ))}
             </div>
           </div>
-          <div className="w-full md:w-1/2 my-8 order-2 md:pl-4">
+          <div className="w-full md:w-1/2 md:my-8 order-2 md:pl-4">
             <div className="space-y-8 mt-4">
               {[
                 {

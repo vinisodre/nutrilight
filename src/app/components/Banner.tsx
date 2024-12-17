@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { playfair } from "@/app/layout";
 
 interface BannerProps {
   title: string;
@@ -27,11 +28,13 @@ function Banner({
   };
 
   return (
-    <section className="w-full py-12 md:py-6 lg:py-12 xl:py-12" style={styles}>
+    <section className="w-full py-32" style={styles}>
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl/none">
+            <h1
+              className={`${playfair.className} text-4xl font-bold tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl/none`}
+            >
               {title}
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-800 md:text-xl dark:text-gray-400">

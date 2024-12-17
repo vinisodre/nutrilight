@@ -4,6 +4,7 @@ import TextGalery from "../components/TextGalery";
 import Gallery3 from "../components/Galery3";
 import CTABanner from "../components/CTABanner";
 import Feature from "../components/Feature";
+import Services from "../components/Services";
 
 function page() {
   return (
@@ -13,14 +14,16 @@ function page() {
         description="Refeições coletivas saudáveis e saborosas para empresas que valorizam o bem-estar e o desempenho de seus funcionários."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        backgroundImage="/images/hero2.png"
+        // backgroundImage="/images/hero2.png"
       />
       <TextGalery
         title="Refeições Coletivas"
         description=""
-        images={[
+        services={[
           { src: "/images/marmita1.jpg", alt: "Image 1" },
           { src: "/images/marmita2.jpg", alt: "Image 2" },
+          { src: "/images/marmita3.jpg", alt: "Image 3" },
+          { src: "/images/marmita4.jpg", alt: "Image 4" },
           { src: "/images/marmita3.jpg", alt: "Image 3" },
           { src: "/images/marmita4.jpg", alt: "Image 4" },
         ]}
@@ -32,14 +35,58 @@ function page() {
           "As refeições incluem pães variados, sucos, bolos, frutas, café, leites, achocolatado, frios, salgados, opções de forno, pão de queijo, requeijão, geleia, iogurte e granola. Também podemos ajustar o cardápio conforme a demanda. Para confraternizações, disponibilizamos cardápios pré-montados, mas aceitamos encomendas personalizadas de acordo com o pedido e a data comemorativa.",
         ]}
       />
-      <Gallery3
+      {/* <Gallery3
         title="Qualidade ao produzir e entregar"
         images={[
           { src: "/images/marmita1.jpg", alt: "Image 1" },
           { src: "/images/marmita2.jpg", alt: "Image 2" },
           { src: "/images/marmita3.jpg", alt: "Image 3" },
         ]}
+      /> */}
+
+      <Services
+        sectionTitle="Qualidade ao produzir e entregar"
+        sectionDescription="Oferecemos refeições coletivas de qualidade com soluções personalizadas para atender suas necessidades"
+        services={[
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+          {
+            title: "Cardápio balanceado",
+            description:
+              "Cardápio balanceado com variados itens e opções personalizadas",
+            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+          },
+        ]}
       />
+
       <Feature
         title="Por que escolher nossos serviços?"
         description="Oferecemos refeições coletivas de qualidade com soluções personalizadas para atender às suas necessidades."

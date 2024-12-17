@@ -4,6 +4,7 @@ import TextGalery from "../components/TextGalery";
 import Gallery3 from "../components/Galery3";
 import CTABanner from "../components/CTABanner";
 import Feature from "../components/Feature";
+import Services from "../components/Services";
 
 function page() {
   return (
@@ -13,12 +14,12 @@ function page() {
         description="Marmitas fit e saudáveis, preparadas com carinho por uma nutricionista para quem busca equilíbrio e resultados."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        backgroundImage="/images/hero2.png"
+        backgroundImage=""
       />
       <TextGalery
         title="Marmitas Fit"
         description="Texto complementar"
-        images={[
+        services={[
           { src: "/images/marmita1.jpg", alt: "Image 1" },
           { src: "/images/marmita2.jpg", alt: "Image 2" },
           { src: "/images/marmita3.jpg", alt: "Image 3" },
@@ -30,14 +31,64 @@ function page() {
           "Imagine ter refeições saudáveis e saborosas sempre à mão, sem esforço. Nossa solução ajuda você a economizar tempo, manter o foco nos seus objetivos e cuidar da sua saúde – tudo isso com praticidade e um custo que cabe no seu bolso!",
         ]}
       />
-      <Gallery3
+      {/* <Gallery3
         title="Qualidade ao produzir e entregar"
         images={[
           { src: "/images/marmita1.jpg", alt: "Image 1" },
           { src: "/images/marmita2.jpg", alt: "Image 2" },
           { src: "/images/marmita3.jpg", alt: "Image 3" },
         ]}
+      /> */}
+
+      <Services
+        sectionTitle="Nossos Serviços"
+        sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
+        services={[
+          {
+            title: "Marmitas",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Refeições Coletivas",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Eventos e Coffee Breaks",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightceia .png", alt: "Image 3" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Marmitas",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Refeições Coletivas",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Eventos e Coffee Breaks",
+            description:
+              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+            image: { src: "/images/nutrilightceia .png", alt: "Image 3" },
+            buttonText: "Saiba mais",
+          },
+        ]}
       />
+
       <Feature
         title="Por que escolher nossas marmitas?"
         description="Garantimos refeições saudáveis, práticas e deliciosas para o seu dia a dia, desenvolvidas por uma nutricionista experiente."
