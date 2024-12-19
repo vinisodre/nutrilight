@@ -14,7 +14,8 @@ function page() {
         description="Cardápios personalizados para festas e eventos corporativos, tornando cada ocasião ainda mais especial."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        // backgroundImage="/images/nutrilightcasamento.png"
+        backgroundImage="/images/bannerevento.png"
+        bannerTextColor="text-white"
       />
       <section className="w-full py-12 md:py-24 lg:py-32 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
@@ -70,7 +71,7 @@ function page() {
             {/* Imagem */}
             <div className="segundo flex justify-center order-1 lg:order-2">
               <Image
-                src="/images/teste.jpg"
+                src="/images/eventos.png"
                 width={400}
                 height={700}
                 alt="Eventos"
@@ -92,7 +93,6 @@ function page() {
               alt: "Image 1",
             },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
           {
             title: "Natal e Ano Novo",
@@ -100,7 +100,6 @@ function page() {
               "Cardápio personalizado para celebrar o Natal e o Ano Novo",
             image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
           {
             title: "Eventos corporativos",
@@ -108,7 +107,6 @@ function page() {
               "Eventos corparativos e empresariais focados na satisfação do cliente",
             image: { src: "/images/nutrilightcorp.png", alt: "Image 3" },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
           {
             title: "Coffee Breaks",
@@ -116,7 +114,6 @@ function page() {
               "Mesas de café para recepcionar e divertir os convidados do seu evento",
             image: { src: "/images/nutrilightcoffee.png", alt: "Image 1" },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
           {
             title: "Aniversários",
@@ -124,14 +121,12 @@ function page() {
               "Cardápio variado e personalizado para celebrar aniversários",
             image: { src: "/images/nutrilightniver.png", alt: "Image 2" },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
           {
             title: "Casamentos",
             description: "Eternize o momento com um cardápio super especial",
             image: { src: "/images/nutrilightcasamento.png", alt: "Image 3" },
             buttonText: "Saiba mais",
-            buttonLink: "/#",
           },
         ]}
       />

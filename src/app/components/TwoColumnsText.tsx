@@ -16,7 +16,7 @@ function TwoColumnsText({ title, description }: Section2Props) {
       }}
     >
       <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-        <div className="w-full mb-10 md:mb-0">
+        <div className="w-full my-10 md:mb-0 ">
           <Title title={title} description={description} />
         </div>
         <div className="flex flex-wrap justify-center mx-auto">
@@ -26,12 +26,12 @@ function TwoColumnsText({ title, description }: Section2Props) {
                 {
                   title: "Problemas com a produtividade",
                   description:
-                    "Refeições de baixa qualidade ou que não agradam os colaboradores pode impactar a produtividade e a motivação no trabalho.",
+                    "Alimentação pobre em nutrientes e não balanceada podem impactar na produtividade e motivação no trabalho.",
                 },
                 {
                   title: "Dificuldade em planejar refeições",
                   description:
-                    "Um cardápio repetitivo pode dificultar a qualidade da alimentação e o bem-estar dos colaboradores. É importante agradar ao paladar e variar as receitas.",
+                    "Um cardápio mal elaborado e fora da origem alimentar dos seus clientes podem afetar diretamente no seu bem estar insatisfação, rendimento ao trabalho. É de grande importância saber o hábito alimentar e se há alguém com restrição alimentar.",
                 },
 
                 {
@@ -57,7 +57,7 @@ function TwoColumnsText({ title, description }: Section2Props) {
                 {
                   title: "Falta de tempo para cozinhar",
                   description:
-                    "A rotina corrida muitas vezes faz com que opções rápidas e menos saudáveis se tornem a escolha principal.",
+                    "A rotina corrida muitas vezes faz com que opções rápidas e menos saudáveis como opções rápidas (fast-food) se tornem a escolha principal.",
                 },
                 {
                   title: "Cansaço no final do dia",
@@ -65,9 +65,9 @@ function TwoColumnsText({ title, description }: Section2Props) {
                     "Quem nunca abriu mão de preparar algo saudável porque estava sem energia após um longo dia de trabalho?",
                 },
                 {
-                  title: "Dificuldade em controlar o peso",
+                  title: "Dificuldade em controlar o peso e ser saudável",
                   description:
-                    "Manter uma alimentação balanceada e saudável pode ser complicado sem orientação adequada.",
+                    "É preciso procurar um nutricionista para fazer acompanhamento de uma alimentação saudável e balanceada.",
                 },
               ].map((solution, index) => (
                 <div key={index}>

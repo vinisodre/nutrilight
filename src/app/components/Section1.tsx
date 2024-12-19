@@ -7,7 +7,7 @@ interface Section1Props {
   title: string;
   description: string;
   paragraph?: string;
-  features: { icon: string; text: string }[];
+  features?: { icon: string; text: string }[];
   mainImageSrc: string;
   mainImageAlt?: string;
   showPrimaryButton?: boolean;
@@ -21,7 +21,7 @@ function Section1({
   title,
   description,
   paragraph,
-  features,
+  features = [],
   mainImageSrc,
   mainImageAlt = "Main Feature Illustration",
   showPrimaryButton = false,

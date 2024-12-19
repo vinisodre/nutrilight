@@ -9,20 +9,21 @@ function page() {
   return (
     <>
       <Banner
-        title="Saúde e sabor na medida certa para o seu dia a dia!"
-        description="Marmitas fit e saudáveis, preparadas com carinho por uma nutricionista para quem busca equilíbrio e resultados."
+        title="Saúde e sabor na medida certa para o seu dia"
+        description="Marmitas saudáveis, preparadas com carinho por uma nutricionista para quem busca saúde e resultados."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        backgroundImage=""
+        backgroundImage="/images/bannermarmita.png"
+        bannerTextColor="text-white"
       />
       <TextGalery
-        title="Marmitas Fit"
-        description="Texto complementar"
+        title="Marmitas"
+        description=""
         services={[
-          { src: "/images/marmita1.jpg", alt: "Image 1" },
-          { src: "/images/marmita2.jpg", alt: "Image 2" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
-          { src: "/images/marmita4.jpg", alt: "Image 4" },
+          { src: "/images/rc1.png", alt: "Image 1" },
+          { src: "/images/rc2.png", alt: "Image 2" },
+          { src: "/images/rc3.png", alt: "Image 3" },
+          { src: "/images/rc4.png", alt: "Image 4" },
         ]}
         paragraphs={[
           "Manter uma alimentação saudável pode ser desafiador. Entre a correria do dia a dia, as tentações de opções rápidas e pouco nutritivas e a falta de tempo para cozinhar, é fácil perder o foco. E, com isso, comprometemos tanto a saúde quanto os resultados na academia ou no trabalho.",
@@ -44,45 +45,24 @@ function page() {
         sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
         services={[
           {
-            title: "Marmitas",
+            title: "Marmitas Fit",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+              "Marmitas com cardápios balanceados e variados, tanto para quem quer crescer ou emagrecer.",
+            image: { src: "/images/fitness.png", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
           {
-            title: "Refeições Coletivas",
+            title: "Restrições alimentares",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
+              "Pessoas com restrição podem se alimentar bem, sem abrir mão do sabor e da qualidade.",
+            image: { src: "/images/restrito.png", alt: "Image 2" },
             buttonText: "Saiba mais",
           },
           {
-            title: "Eventos e Coffee Breaks",
+            title: "Falta de tempo para cozinhar",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightceia .png", alt: "Image 3" },
-            buttonText: "Saiba mais",
-          },
-          {
-            title: "Marmitas",
-            description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
-            buttonText: "Saiba mais",
-          },
-          {
-            title: "Refeições Coletivas",
-            description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
-            buttonText: "Saiba mais",
-          },
-          {
-            title: "Eventos e Coffee Breaks",
-            description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightceia .png", alt: "Image 3" },
+              "Com nossas marmitas, você otimiza seu tempo e ganha praticidade sem abrir mão do sabor.",
+            image: { src: "/images/tempo.png", alt: "Image 3" },
             buttonText: "Saiba mais",
           },
         ]}
