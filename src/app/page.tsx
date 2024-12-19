@@ -11,8 +11,8 @@ export default function LandingPage() {
     <>
       {/* Hero Section */}
       <HeroImage
-        title="A refeição perfeita para o seu negócio"
-        description="Nós alimentamos a seus funcionários com carinho e sabor"
+        title="A refeição perfeita para o seu negócio ou colaborador"
+        description="Alimentação de verdade, saborosa e saudável para seu colaborador. "
         showPrimaryButton={false}
         showSecondaryButton={false}
       />
@@ -29,21 +29,21 @@ export default function LandingPage() {
           {
             title: "Marmitas",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+              "Nossas marmitas são produzidas por uma nutricionista que elabora cardápios variados e personalizados.",
             image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
           {
             title: "Refeições Coletivas",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+              "Nossa cardápios são elaborados e acompanhando pela  nutricionista, visando a qualidade, satisfação e bem estar dos nossos colaboradores.",
             image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
             buttonText: "Saiba mais",
           },
           {
             title: "Eventos e Coffee Breaks",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
+              "Trabalhamos com encomendas de confraternização,  ceia natalina  e eventos familiares.",
             image: { src: "/images/nutrilightceia .png", alt: "Image 3" },
             buttonText: "Saiba mais",
           },
@@ -56,11 +56,10 @@ export default function LandingPage() {
         <Section2
           imageSrc="/images/teste.jpg"
           title="Quem somos"
-          description="O segredo do nosso sabor e qualidade estão nas mãos de quem faz a refeição.
-        Há una nutricionista preparando cada refeição do seu negócio."
+          description="Uma família que prepara  com suas mãos de fada uma alimentação com mt amor e dedicação. E que visa sua satisfação sempre como nossa prioridade."
           showPrimaryButton={false}
           showSecondaryButton={true}
-          secondaryButtonText="Conheça quem somos"
+          secondaryButtonText="Conheça nossa história"
           linkSecondaryButton="/quem-somos"
         />
       </div>
@@ -68,16 +67,17 @@ export default function LandingPage() {
       <Section1
         backgroundColor=""
         title="Nosso diferencial"
-        description="Nós alimentamos a seus funcionários com carinho e sabor"
-        paragraph="Nosso grande diferencial é contar com uma nutricionista responsável pela elaboração dos cardápios e pelo acompanhamento da produção. Além disso, oferecemos treinamento para os funcionários e explicamos o manual de boas práticas, conforme a legislação vigente (RDC 216)."
-        features={[
-          { icon: "/images/placeholder300.png", text: "Marmitas Fit" },
-          { icon: "/images/placeholder300.png", text: "Refeições para obras" },
-          {
-            icon: "/images/placeholder300.png",
-            text: "Eventos e Coffee Breaks",
-          },
-        ]}
+        description="É manter as características sensoriais do alimento como sabor, aroma, cor, textura e aparência da refeição. 
+"
+        paragraph="Contamos com uma nutricionista responsável pela elaboração dos cardápios e pelo acompanhamento da produção. Além disso, Oferecemos treinamento através do manual de boas prática."
+        // features={[
+        //   { icon: "/images/placeholder300.png", text: "Marmitas Fit" },
+        //   { icon: "/images/placeholder300.png", text: "Refeições para obras" },
+        //   {
+        //     icon: "/images/placeholder300.png",
+        //     text: "Eventos e Coffee Breaks",
+        //   },
+        // ]}
         mainImageSrc="/images/nutrilightmarmitas.png"
         mainImageAlt="Main Feature Illustration"
         showPrimaryButton={false}

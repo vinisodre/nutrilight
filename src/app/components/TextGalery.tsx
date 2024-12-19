@@ -50,12 +50,12 @@ function ImageText({
             <div className="grid sm:grid-cols-2 sm:gap-1">
               {services.map((service, index) => (
                 <Card key={index} className="flex flex-col mt-3 sm:mt-0">
-                  <div className="relative w-full pt-[70%]">
+                  <div className="relative w-full min-h-60 min-h-60 pt-[70%]">
                     <Image
                       src={service.src}
                       alt={service.alt}
                       fill
-                      className="rounded-t-lg object-cover"
+                      className="rounded-lg object-cover shadow-gray-400 shadow-2xl"
                     />
                   </div>
                 </Card>

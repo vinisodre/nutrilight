@@ -13,18 +13,17 @@ function page() {
         description="Refeições coletivas saudáveis e saborosas para empresas que valorizam o bem-estar e o desempenho de seus funcionários."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        // backgroundImage="/images/hero2.png"
+        backgroundImage="/images/bannerrefeicoes.png"
+        bannerTextColor="text-white"
       />
       <TextGalery
         title="Refeições Coletivas"
         description=""
         services={[
-          { src: "/images/marmita1.jpg", alt: "Image 1" },
-          { src: "/images/marmita2.jpg", alt: "Image 2" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
-          { src: "/images/marmita4.jpg", alt: "Image 4" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
-          { src: "/images/marmita4.jpg", alt: "Image 4" },
+          { src: "/images/mt1.png", alt: "Image 1" },
+          { src: "/images/mt2.png", alt: "Image 2" },
+          { src: "/images/mt3.png", alt: "Image 3" },
+          { src: "/images/mt4.png", alt: "Image 4" },
         ]}
         paragraphs={[
           "Gerir uma empresa exige foco no que realmente importa: resultados. Mas como alcançar o máximo desempenho quando os funcionários não têm acesso a refeições adequadas? A rotina corrida, a falta de opções equilibradas e os custos elevados podem comprometer tanto a saúde da equipe quanto a produtividade do negócio.",
@@ -34,14 +33,6 @@ function page() {
           "As refeições incluem pães variados, sucos, bolos, frutas, café, leites, achocolatado, frios, salgados, opções de forno, pão de queijo, requeijão, geleia, iogurte e granola. Também podemos ajustar o cardápio conforme a demanda. Para confraternizações, disponibilizamos cardápios pré-montados, mas aceitamos encomendas personalizadas de acordo com o pedido e a data comemorativa.",
         ]}
       />
-      {/* <Gallery3
-        title="Qualidade ao produzir e entregar"
-        images={[
-          { src: "/images/marmita1.jpg", alt: "Image 1" },
-          { src: "/images/marmita2.jpg", alt: "Image 2" },
-          { src: "/images/marmita3.jpg", alt: "Image 3" },
-        ]}
-      /> */}
 
       <Services
         sectionTitle="Qualidade ao produzir e entregar"
@@ -51,37 +42,17 @@ function page() {
             title: "Cardápio balanceado",
             description:
               "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+            image: { src: "/images/cozinha.png", alt: "Image 1" },
           },
           {
-            title: "Cardápio balanceado",
-            description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+            title: "Cuidado ao preparar",
+            description: "Refeições montaas com carinho.",
+            image: { src: "/images/preparo.png", alt: "Image 1" },
           },
           {
-            title: "Cardápio balanceado",
-            description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
-          },
-          {
-            title: "Cardápio balanceado",
-            description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
-          },
-          {
-            title: "Cardápio balanceado",
-            description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
-          },
-          {
-            title: "Cardápio balanceado",
-            description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
-            image: { src: "/images/nutrilightcardapio.png", alt: "Image 1" },
+            title: "Entrega pontual",
+            description: "rganização e pontualidade na entrega das refeições",
+            image: { src: "/images/entrega.png", alt: "Image 1" },
           },
         ]}
       />

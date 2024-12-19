@@ -10,11 +10,12 @@ function page() {
     <div className="relative">
       <DotPattern className="absolute inset-0 -z-10" />
       <Banner
-        title="Quem Somos"
-        description="A refeição perfeita para o seu negócio"
+        title="Conheça nossa historia e nossa missão"
+        description="Nosso compromisso é oferecer alimentos saudáveis e saborosos para o todos."
         showPrimaryButton={false}
         showSecondaryButton={false}
-        backgroundImage="/images/hero2.png"
+        backgroundImage="/images/bannerquemsomos.png"
+        bannerTextColor="text-white"
       />
       <ImageText
         title="NutriLight"
@@ -30,27 +31,27 @@ function page() {
         sectionTitle="Nosso trabalho"
         services={[
           {
-            title: "Marmitas Fit",
+            title: "Ambiente preparado",
             description:
-              "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+              "A nossa cozinha está preparada e atende todos os requisitos de higiene e qualidade.",
+            image: { src: "/images/cozinha.png", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
           {
-            title: "Refeições Coletivas",
+            title: "Feito com carinho",
             description:
               "Nossas refeições coletivas oferecem cardápios balanceados e variados, tanto para clientes individuais quanto para refeições coletivas",
             image: {
-              src: "/images/nutrilightrefeicoescoletivas.png",
+              src: "/images/preparo.png",
               alt: "Image 2",
             },
             buttonText: "Saiba mais",
           },
           {
-            title: "Marmitas",
+            title: "Qualidade padronizada",
             description:
               "Nossas marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas",
-            image: { src: "/images/nutrilightmarmitas.png", alt: "Image 1" },
+            image: { src: "/images/peso.png", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
         ]}
