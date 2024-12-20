@@ -10,8 +10,8 @@ function page() {
   return (
     <>
       <Banner
-        title="Comemore com sabor e praticidade!"
-        description="Cardápios personalizados para festas e eventos corporativos, tornando cada ocasião ainda mais especial."
+        title="Ceias que ficam na memória"
+        description=""
         showPrimaryButton={false}
         showSecondaryButton={false}
         backgroundImage="/images/bannerevento.png"
@@ -26,42 +26,41 @@ function page() {
                 <h2
                   className={`${playfair.className} text-3xl font-bold tracking-tighter sm:text-5xl`}
                 >
-                  Foque no seu evento
+                  Ceias cheias de sabor
                 </h2>
-                <p className="text-gray-500 md:text-md dark:text-gray-400"></p>
 
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Organizar eventos é sempre um desafio: lidar com fornecedores,
-                  garantir que todos estejam bem servidos e ainda cuidar da
-                  apresentação e do sabor pode ser estressante. Afinal, quem
-                  quer se preocupar com a comida quando deveria estar
-                  celebrando?
+                  Seja para um Natal repleto de amor, uma Páscoa cheia de
+                  esperança, um Ano Novo com desejos de prosperidade ou um
+                  aniversário especial, nossa equipe está pronta para trazer
+                  sabor e praticidade às suas comemorações.
+                </p>
+
+                <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
+                  Sabemos que organizar uma ceia pode ser um grande desafio:
+                  pensar no cardápio, lidar com fornecedores, garantir que tudo
+                  esteja no ponto certo e ainda criar um ambiente acolhedor para
+                  os convidados. Por isso, oferecemos soluções completas para
+                  que você possa focar no que realmente importa: celebrar ao
+                  lado de quem você ama.
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Com nosso serviço especializado, você não precisa se
-                  preocupar. Preparamos cardápios personalizados para atender
-                  aos mais diversos tipos de eventos, garantindo qualidade,
-                  sabor e uma experiência única para seus convidados. Seja uma
-                  celebração íntima ou um evento corporativo, cuidamos de tudo
-                  com excelência.
+                  Nossos cardápios são cuidadosamente elaborados para refletir o
+                  espírito de cada ocasião, combinando tradição, inovação e um
+                  toque especial que só nossa equipe pode oferecer. Trabalhamos
+                  com ingredientes frescos e de alta qualidade, garantindo que
+                  cada prato seja uma experiência única.
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Servimos eventos em datas comemorativas e momentos especiais.
+                  Transforme suas ceias em um momento mágico. Seja uma
+                  celebração tradicional ou algo mais contemporâneo,
+                  personalizamos cada detalhe para atender suas necessidades e
+                  surpreender seus convidados.
                 </p>
-                {/* <ul className="text-gray-500 md:text-md dark:text-gray-400 pt-4 ml-2">
-                  <li className="mb-2 font-semibold">Festas de fim de ano</li>
-                  <li className="mb-2 font-semibold">Natal e Ano Novo</li>
-                  <li className="mb-2 font-semibold">Páscoa</li>
-                  <li className="mb-2 font-semibold">
-                    Coffee breaks corporativos
-                  </li>
-                  <li className="mb-2 font-semibold">Reunioes de negócios</li>
-                  <li className="mb-2 font-semibold">Aniversários</li>
-                  <li className="mb-2 font-semibold">Casamentos</li>
-                </ul> */}
+
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Com nossa experiência, seu evento será um sucesso e vocé
-                  poderá aproveitar o momento sem preocupações!
+                  Cuidamos de tudo para que você possa aproveitar cada instante
+                  sem preocupações!
                 </p>
               </div>
             </div>
@@ -69,7 +68,7 @@ function page() {
             {/* Imagem */}
             <div className="segundo flex justify-center order-1 lg:order-2">
               <Image
-                src="/images/corporativo.png"
+                src="/images/ceia.png"
                 width={400}
                 height={700}
                 alt="Eventos"
@@ -84,27 +83,23 @@ function page() {
         sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
         services={[
           {
-            title: "Confraternizaçõe de empresas",
-            description: "confraternizações de fim de ano de empresas",
-            image: {
-              src: "/images/nutrilightconfraternizacao.png",
-              alt: "Image 1",
-            },
-            buttonText: "Saiba mais",
-          },
-
-          {
-            title: "Eventos corporativos",
+            title: "Aniversários",
             description:
-              "Eventos corparativos e empresariais focados na satisfação do cliente",
-            image: { src: "/images/nutrilightcorp.png", alt: "Image 3" },
+              "Cardápio variado e personalizado para celebrar aniversários",
+            image: { src: "/images/nutrilightniver.png", alt: "Image 2" },
             buttonText: "Saiba mais",
           },
           {
-            title: "Coffee Breaks",
+            title: "Natal e Ano Novo",
             description:
-              "Mesas de café para recepcionar e divertir os convidados do seu evento",
-            image: { src: "/images/nutrilightcoffee.png", alt: "Image 1" },
+              "Cardápio personalizado para celebrar o Natal e o Ano Novo",
+            image: { src: "/images/nutrilightrefeitorio.png", alt: "Image 2" },
+            buttonText: "Saiba mais",
+          },
+          {
+            title: "Casamentos",
+            description: "Eternize o momento com um cardápio super especial",
+            image: { src: "/images/nutrilightcasamento.png", alt: "Image 3" },
             buttonText: "Saiba mais",
           },
         ]}
@@ -120,12 +115,12 @@ function page() {
           "Atendimento profissional e flexível às suas necessidades",
           "Comida saborosa que encanta seus convidados",
         ]}
-        imageSrc="/images/coffeebreak.png"
+        imageSrc="/images/nutrilightceia .png"
         imageAlt="Marmitas fit e saudáveis organizadas em uma mesa."
       />
       <CTABanner
-        title="Vamos planejar o cardápio do seu evento?"
-        description="Deixe suas comemorações ainda mais marcantes com nossos serviços de alimentação para eventos."
+        title="Vamos planejar a sua ceia?"
+        description="Deixe suas comemorações ainda mais marcantes com nossos pratos."
         buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
         buttonLabel="Fale no Whatsapp"
       />

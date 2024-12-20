@@ -19,8 +19,9 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "Quem Somos", href: "/quem-somos" },
-    { name: "Refeições", href: "/refeicoes" },
-    { name: "Marmitas", href: "/marmitas" },
+    { name: "Refeições Coletivas", href: "/refeicoes" },
+    { name: "Marmitas Fit", href: "/marmitas" },
+    { name: "Ceias", href: "/ceias" },
     { name: "Eventos", href: "/eventos" },
     { name: "Contato", href: "/#contact" },
   ];
