@@ -31,23 +31,23 @@ function page() {
                 <p className="text-gray-500 md:text-md dark:text-gray-400"></p>
 
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Organizar eventos é sempre um desafio: lidar com fornecedores,
-                  garantir que todos estejam bem servidos e ainda cuidar da
-                  apresentação e do sabor pode ser estressante. Afinal, quem
-                  quer se preocupar com a comida quando deveria estar
-                  celebrando?
+                  Organizar eventos é sempre um desafio: além de lidar com as
+                  apresentações do envento e garantir que tudo ocorra bem, é
+                  preciso cuidar para que as pessoas sejam bem servidas. Afinal,
+                  quem quer se preocupar com a comida quando deveria estar
+                  focando em outros aspectos do evento?
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
                   Com nosso serviço especializado, você não precisa se
                   preocupar. Preparamos cardápios personalizados para atender
                   aos mais diversos tipos de eventos, garantindo qualidade,
                   sabor e uma experiência única para seus convidados. Seja uma
-                  celebração íntima ou um evento corporativo, cuidamos de tudo
-                  com excelência.
+                  celebração íntima, palestras, eventos religiosos ou um evento
+                  corporativo: cuidamos de tudo com excelência.
                 </p>
-                <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
+                {/* <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
                   Servimos eventos em datas comemorativas e momentos especiais.
-                </p>
+                </p> */}
                 {/* <ul className="text-gray-500 md:text-md dark:text-gray-400 pt-4 ml-2">
                   <li className="mb-2 font-semibold">Festas de fim de ano</li>
                   <li className="mb-2 font-semibold">Natal e Ano Novo</li>
@@ -60,7 +60,7 @@ function page() {
                   <li className="mb-2 font-semibold">Casamentos</li>
                 </ul> */}
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Com nossa experiência, seu evento será um sucesso e vocé
+                  Com nossa experiência, seu evento será um sucesso e você
                   poderá aproveitar o momento sem preocupações!
                 </p>
               </div>

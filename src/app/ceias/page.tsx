@@ -38,29 +38,20 @@ function page() {
 
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
                   Sabemos que organizar uma ceia pode ser um grande desafio:
-                  pensar no cardápio, lidar com fornecedores, garantir que tudo
-                  esteja no ponto certo e ainda criar um ambiente acolhedor para
-                  os convidados. Por isso, oferecemos soluções completas para
-                  que você possa focar no que realmente importa: celebrar ao
-                  lado de quem você ama.
+                  pensar no cardápio, comprar ingredientes, garantir que tudo
+                  esteja no ponto certo... Por isso, oferecemos soluções
+                  completas para que você possa focar no que realmente importa:
+                  celebrar ao lado de quem você ama.
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
                   Nossos cardápios são cuidadosamente elaborados para refletir o
-                  espírito de cada ocasião, combinando tradição, inovação e um
-                  toque especial que só nossa equipe pode oferecer. Trabalhamos
-                  com ingredientes frescos e de alta qualidade, garantindo que
-                  cada prato seja uma experiência única.
+                  espírito de cada ocasião. Trabalhamos com ingredientes frescos
+                  e de alta qualidade, garantindo que cada prato seja uma
+                  experiência única.
                 </p>
                 <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Transforme suas ceias em um momento mágico. Seja uma
-                  celebração tradicional ou algo mais contemporâneo,
-                  personalizamos cada detalhe para atender suas necessidades e
-                  surpreender seus convidados.
-                </p>
-
-                <p className="text-gray-500 md:text-md dark:text-gray-400 pt-8">
-                  Cuidamos de tudo para que você possa aproveitar cada instante
-                  sem preocupações!
+                  Transforme suas ceias em um momento mágico. Cuidamos de tudo
+                  para que você possa aproveitar cada instante sem preocupações!
                 </p>
               </div>
             </div>
@@ -80,7 +71,7 @@ function page() {
 
       <Services
         sectionTitle="Nossos Serviços"
-        sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
+        sectionDescription="Desenolvemos cardápios variados e personalizados para cada ocasião"
         services={[
           {
             title: "Aniversários",

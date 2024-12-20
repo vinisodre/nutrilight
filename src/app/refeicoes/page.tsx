@@ -27,10 +27,9 @@ function page() {
         ]}
         paragraphs={[
           "Gerir uma empresa exige foco no que realmente importa: resultados. Mas como alcançar o máximo desempenho quando os funcionários não têm acesso a refeições adequadas? A rotina corrida, a falta de opções equilibradas e os custos elevados podem comprometer tanto a saúde da equipe quanto a produtividade do negócio.",
-          "Aqui entra a diferença que faz nossa solução de refeições coletivas. Desenvolvemos cardápios balanceados por uma nutricionista experiente, adaptados às necessidades da sua equipe e entregues com qualidade impecável. Tudo isso sem complicações, com flexibilidade e custo-benefício que cabem no orçamento da sua empresa.",
-          "Além de promover o bem-estar dos funcionários, nossas refeições ajudam a reduzir o absenteísmo e elevar a motivação no ambiente de trabalho. Um time bem alimentado é mais engajado, eficiente e feliz – o reflexo direto no sucesso da sua empresa é garantido!",
-          "Nossas marmitas fitness oferecem cardápios balanceados e variados, mas também trabalhamos com opções personalizadas conforme a preferência do cliente. Para as refeições coletivas em canteiros de obra, oferecemos cardápios pré-montados, mas estamos sempre prontos para atender às necessidades e escolhas específicas dos clientes.",
-          "As refeições incluem pães variados, sucos, bolos, frutas, café, leites, achocolatado, frios, salgados, opções de forno, pão de queijo, requeijão, geleia, iogurte e granola. Também podemos ajustar o cardápio conforme a demanda. Para confraternizações, disponibilizamos cardápios pré-montados, mas aceitamos encomendas personalizadas de acordo com o pedido e a data comemorativa.",
+          "Para resolver isso, oferecemos nossa solução de refeições coletivas. Desenvolvemos cardápios balanceados por uma nutricionista experiente, adaptados às necessidades da sua equipe e entregues com qualidade. Tudo isso sem complicações, com flexibilidade e custo-benefício que cabem no orçamento da sua empresa.",
+          "Para as refeições coletivas em canteiros de obra, oferecemos cardápios pré-montados, mas estamos sempre prontos para atender às necessidades e escolhas específicas dos clientes.",
+          "As refeições incluem pães variados, sucos, bolos, frutas, café, leites, achocolatado, frios, salgados, opções de forno, pão de queijo, requeijão, geleia, iogurte e granola.",
         ]}
       />
 
@@ -39,9 +38,9 @@ function page() {
         sectionDescription="Oferecemos refeições coletivas de qualidade com soluções personalizadas para atender suas necessidades"
         services={[
           {
-            title: "Cardápio balanceado",
+            title: "Cozinha profissional",
             description:
-              "Cardápio balanceado com variados itens e opções personalizadas",
+              "Ambiente limpo, higienizado e com equipamentos de qualidade.",
             image: { src: "/images/cozinha.png", alt: "Image 1" },
           },
           {
