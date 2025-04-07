@@ -20,7 +20,7 @@ function page() {
         title="Marmitas"
         description=""
         services={[
-          { src: "/images/rc1.png", alt: "Image 1" },
+          { src: "/images/marmita21.jpg", alt: "Image 1" },
           { src: "/images/rc2.png", alt: "Image 2" },
           { src: "/images/rc3.png", alt: "Image 3" },
           { src: "/images/rc4.png", alt: "Image 4" },

@@ -38,15 +38,14 @@ function page() {
         sectionDescription="Oferecemos refeições coletivas de qualidade com soluções personalizadas para atender suas necessidades"
         services={[
           {
-            title: "Cozinha profissional",
-            description:
-              "Ambiente limpo, higienizado e com equipamentos de qualidade.",
-            image: { src: "/images/cozinha.png", alt: "Image 1" },
+            title: "A quantidade certa",
+            description: "Marmitas feitas de acordo com a sua necessidade.",
+            image: { src: "/images/marmita21.png", alt: "Image 1" },
           },
           {
             title: "Cuidado ao preparar",
-            description: "Refeições montaas com carinho.",
-            image: { src: "/images/preparo.png", alt: "Image 1" },
+            description: "Refeições especiais feitas para dias especiais.",
+            image: { src: "/images/marmita5.jpg", alt: "Image 1" },
           },
           {
             title: "Entrega pontual",
