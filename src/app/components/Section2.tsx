@@ -7,7 +7,7 @@ import React from "react";
 interface Section2Props {
   title: string;
   description: string;
-  imageSrc?: string;
+  imageSrc: string;
   imageAlt?: string;
   showPrimaryButton?: boolean;
   showSecondaryButton?: boolean;
