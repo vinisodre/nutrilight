@@ -52,6 +52,7 @@ function ImageText({
               width={400}
               height={700}
               alt={mainImageAlt}
+              className="rounded-tl-[90px] rounded-tr-[30px] rounded-bl-[30px] rounded-br-[90px]"
             />
           </div>
         </div>

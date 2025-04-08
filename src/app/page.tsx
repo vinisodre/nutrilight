@@ -11,7 +11,7 @@ export default function LandingPage() {
     <>
       {/* Hero Section */}
       <HeroImage
-        title="A refeição perfeita para o seu negócio ou colaborador"
+        title="A refeição perfeita para o seu negócio"
         description="Alimentação de verdade, saborosa e saudável para seu colaborador. "
         showPrimaryButton={false}
         showSecondaryButton={false}
@@ -54,7 +54,7 @@ export default function LandingPage() {
       <div className="relative">
         <DotPattern className="absolute inset-0 -z-10" />
         <Section2
-          imageSrc="/images/teste.jpg"
+          imageSrc="/images/marmitas.jpg"
           title="Quem somos"
           description="Uma família que prepara  com suas mãos de fada uma alimentação com mt amor e dedicação. E que visa sua satisfação sempre como nossa prioridade."
           showPrimaryButton={false}
@@ -78,7 +78,7 @@ export default function LandingPage() {
         //     text: "Eventos e Coffee Breaks",
         //   },
         // ]}
-        mainImageSrc="/images/nutrilightmarmitas.png"
+        mainImageSrc="/images/preparo.png"
         mainImageAlt="Main Feature Illustration"
         showPrimaryButton={false}
         showSecondaryButton={false}

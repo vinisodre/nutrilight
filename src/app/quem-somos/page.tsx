@@ -20,15 +20,15 @@ function page() {
       <ImageText
         title="NutriLight"
         description="Alimentos saudáveis"
-        mainImageSrc="/images/teste.jpg"
+        mainImageSrc="/images/nutrilightrefeitorio.png"
         paragraphs={[
-          "A Nutri Light 🍎 é uma empresa especializada em marmitas fitness e alimentação coletiva, comprometida em oferecer refeições saudáveis, saborosas e de alta qualidade. Nossa cozinha industrial foi fundada por uma nutricionista apaixonada por nutrição de produção, formada desde 2015, com experiência em nutrição clínica, mas que encontrou sua verdadeira vocação na criação de cardápios equilibrados e nutritivos.",
+          "A Nutri Light é uma empresa especializada em marmitas fitness e alimentação coletiva, comprometida em oferecer refeições saudáveis, saborosas e de alta qualidade. Nossa cozinha industrial foi fundada por uma nutricionista apaixonada por nutrição de produção, formada desde 2015, com experiência em nutrição clínica, mas que encontrou sua verdadeira vocação na criação de cardápios equilibrados e nutritivos.",
 
           "Aqui, cada refeição é cuidadosamente preparada por nossa equipe, sob a supervisão direta da nossa fundadora, garantindo sabor caseiro e um toque especial de carinho. Trabalhamos apenas com ingredientes selecionados para proporcionar o equilíbrio perfeito entre saúde e prazer à mesa.",
 
           "Além das nossas deliciosas refeições, também oferecemos planos alimentares personalizados, ajudando você a alcançar seus objetivos com uma alimentação planejada e nutritiva.",
 
-          "💚 Nutri Light – Cuidando da sua alimentação com qualidade, carinho e dedicação!",
+          "Nutri Light – Cuidando da sua alimentação com qualidade, carinho e dedicação!",
         ]}
       />
 
@@ -39,7 +39,7 @@ function page() {
             title: "Ambiente preparado",
             description:
               "A nossa cozinha está preparada e atende todos os requisitos de higiene e qualidade.",
-            image: { src: "/images/cozinha.png", alt: "Image 1" },
+            image: { src: "/images/novoambiente.jpg", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
           {

@@ -7,7 +7,7 @@ import React from "react";
 interface Section2Props {
   title: string;
   description: string;
-  imageSrc: string;
+  imageSrc?: string;
   imageAlt?: string;
   showPrimaryButton?: boolean;
   showSecondaryButton?: boolean;
@@ -38,7 +38,7 @@ function Section2({
             width={400}
             height={400}
             alt={imageAlt}
-            className="mx-auto"
+            className="mx-auto rounded-tl-[90px] rounded-tr-[30px] rounded-bl-[30px] rounded-br-[90px]"
           />
           <div className="flex flex-col justify-center mx-auto">
             <div className="space-y-2">
