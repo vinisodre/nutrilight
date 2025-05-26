@@ -96,7 +96,7 @@ export default function LandingPage() {
           },
           {
             type: "whatsapp",
-            url: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z",
+            url: "https://api.whatsapp.com/send/?phone=5521987017520&text&type=phone_number&app_absent=0",
             buttonText: "Fale no WhatsApp",
           },
         ]}
