@@ -4,6 +4,7 @@ import ImageText from "../components/ImageText";
 import DotPattern from "@/components/ui/dot-pattern";
 import Services from "../components/Services";
 import CTABanner from "../components/CTABanner";
+import Gallery from "../components/Galery";
 
 function page() {
   return (
@@ -30,6 +31,22 @@ function page() {
 
           "Nutri Light – Cuidando da sua alimentação com qualidade, carinho e dedicação!",
         ]}
+      />
+
+      <Gallery
+        className="bg-white  shadow-sm"
+        title="Com quem já trabalhamos"
+        images={[
+          {
+            src: "/images/serviço-agabo-construtora.png",
+            alt: "logo construtora ágabo",
+          },
+          {
+            src: "/images/serviço-rioforte.png",
+            alt: "logo rio forte",
+          },
+        ]}
+        imgClassName="shadow-none"
       />
 
       <Services
