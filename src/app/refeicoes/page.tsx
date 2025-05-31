@@ -40,7 +40,7 @@ function page() {
           {
             title: "A quantidade certa",
             description: "Marmitas feitas de acordo com a sua necessidade.",
-            image: { src: "/images/marmita21.png", alt: "Image 1" },
+            image: { src: "/images/quantidade.jpg", alt: "Image 1" },
           },
           {
             title: "Cuidado ao preparar",
@@ -50,7 +50,7 @@ function page() {
           {
             title: "Entrega pontual",
             description: "rganização e pontualidade na entrega das refeições",
-            image: { src: "/images/entrega.png", alt: "Image 1" },
+            image: { src: "/images/coletiva.jpg", alt: "Image 1" },
           },
         ]}
       />
@@ -65,7 +65,7 @@ function page() {
           "Entrega pontual e organizada, mesmo em grandes volumes",
           "Variedade de opções para eventos, obras e empresas de diferentes perfis",
         ]}
-        imageSrc="/images/nutrilightrefeitorio.png"
+        imageSrc="/images/marmita2a.jpg"
         imageAlt="Ilustração do nosso negócio"
       />
       <CTABanner

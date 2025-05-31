@@ -54,7 +54,7 @@ export default function LandingPage() {
       <div className="relative">
         <DotPattern className="absolute inset-0 -z-10" />
         <Section2
-          imageSrc="/images/marmitas.jpg"
+          imageSrc="/images/destaque.jpg"
           title="Quem somos"
           description="Uma família que prepara  com suas mãos de fada uma alimentação com mt amor e dedicação. E que visa sua satisfação sempre como nossa prioridade."
           showPrimaryButton={false}

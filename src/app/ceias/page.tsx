@@ -59,7 +59,7 @@ function page() {
             {/* Imagem */}
             <div className="segundo flex justify-center order-1 lg:order-2">
               <Image
-                src="/images/ceia.png"
+                src="/images/ceiatop.jpg"
                 width={400}
                 height={700}
                 alt="Eventos"
@@ -107,7 +107,7 @@ function page() {
           "Atendimento profissional e flexível às suas necessidades",
           "Comida saborosa que encanta seus convidados",
         ]}
-        imageSrc="/images/nutrilightceia .png"
+        imageSrc="/images/ceia2a.jpg"
         imageAlt="Marmitas fit e saudáveis organizadas em uma mesa."
       />
       <CTABanner
