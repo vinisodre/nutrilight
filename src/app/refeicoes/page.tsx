@@ -49,8 +49,8 @@ function page() {
           },
           {
             title: "Entrega pontual",
-            description: "rganização e pontualidade na entrega das refeições",
-            image: { src: "/images/coletiva.jpg", alt: "Image 1" },
+            description: "Organização e pontualidade na entrega das refeições",
+            image: { src: "/images/costelabatata.jpg", alt: "Image 1" },
           },
         ]}
       />
@@ -65,14 +65,14 @@ function page() {
           "Entrega pontual e organizada, mesmo em grandes volumes",
           "Variedade de opções para eventos, obras e empresas de diferentes perfis",
         ]}
-        imageSrc="/images/marmita2a.jpg"
+        imageSrc="/images/coletiva.jpg"
         imageAlt="Ilustração do nosso negócio"
       />
       <CTABanner
         title="Sua equipe merece o melhor"
         description="Entre em contato agora mesmo para conhecer nossas opções de refeições coletivas personalizadas."
         buttonLabel="Fale no WhatsApp"
-        buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
+        buttonLink="https://api.whatsapp.com/send/?phone=5521987017520&text&type=phone_number&app_absent=0"
       />
     </>
   );

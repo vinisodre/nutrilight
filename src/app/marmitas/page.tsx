@@ -21,9 +21,9 @@ function page() {
         description=""
         services={[
           { src: "/images/marmita21.jpg", alt: "Image 1" },
-          { src: "/images/rc2.png", alt: "Image 2" },
-          { src: "/images/rc3.png", alt: "Image 3" },
-          { src: "/images/rc4.png", alt: "Image 4" },
+          { src: "/images/rc3.png", alt: "Image 2" },
+          { src: "/images/rc4.png", alt: "Image 3" },
+          { src: "/images/rc2.png", alt: "Image 4" },
         ]}
         paragraphs={[
           "Manter uma alimentação saudável pode ser desafiador. Entre a correria do dia a dia, as tentações de opções rápidas e pouco nutritivas e a falta de tempo para cozinhar, é fácil perder o foco. E, com isso, comprometemos tanto a saúde quanto os resultados na academia ou no trabalho.",
@@ -41,14 +41,14 @@ function page() {
       /> */}
 
       <Services
-        sectionTitle="Nossos Serviços"
+        sectionTitle="Qualidade ao produzir e entregar"
         sectionDescription="Nossos marmitas oferecem cardápios balanceados e variados, tanto para cliente individuais quanto para refeições coletivas"
         services={[
           {
             title: "Marmitas Fit",
             description:
               "Marmitas com cardápios balanceados e variados, tanto para quem quer crescer ou emagrecer.",
-            image: { src: "/images/fitness.png", alt: "Image 1" },
+            image: { src: "/images/marmita22b.png", alt: "Image 1" },
             buttonText: "Saiba mais",
           },
           {
@@ -85,7 +85,7 @@ function page() {
         title="Pronto para transformar sua alimentação?"
         description="Escolha saúde e praticidade no seu dia a dia. Clique no botão e fale diretamente com a nossa nutricionista para conhecer nossas opções de marmitas fit."
         buttonLabel="Fale no WhatsApp"
-        buttonLink="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5521987017520&e=AT3jh2sTLc1oGBLMChfcb7QH6kPR9o73eImncEUe_XiwQLhwZ3i-yhzKJu68OTuJqNACXhPbGT-zESGC-b2y3MrWf2SM_v-Z"
+        buttonLink="https://api.whatsapp.com/send/?phone=5521987017520&text&type=phone_number&app_absent=0"
       />
     </>
   );
